@@ -47,6 +47,24 @@ namespace DCIT_318_InventorySystem
             prod.ukey = row.Cells["itemcode"].Value.ToString();
             prod.ShowDialog();
         }
-        
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            invCRUD.display("select * from stockitems where itemname like '%" + txtSearch.Text + "%'",dataGridView1);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            frmAddCategory prod = new frmAddCategory();
+            prod.ShowDialog();
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridView2.Rows[e.RowIndex];
+            frmEditCategory  prod = new frmEditCategory();
+            prod.Categoryid = row.Cells["categoryid"].Value.ToString();
+            prod.Show();
+        }
     }
 }
