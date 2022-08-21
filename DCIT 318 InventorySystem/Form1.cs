@@ -30,7 +30,8 @@ namespace DCIT_318_InventorySystem
             if (tbl.Rows.Count == 1)
             {
                 this.Hide();
-
+                frmMain frmMain = new frmMain();
+                frmMain.ShowDialog();
 
 
             }
