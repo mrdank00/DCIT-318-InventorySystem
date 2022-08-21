@@ -230,6 +230,7 @@
             this.Name = "frmAddProd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddProd";
+            this.Load += new System.EventHandler(this.frmAddProd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

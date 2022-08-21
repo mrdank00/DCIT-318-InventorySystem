@@ -12,6 +12,7 @@ namespace DCIT_318_InventorySystem
 {
     public partial class frmManageprod : Form
     {
+        
         public frmManageprod()
         {
             InitializeComponent();
@@ -38,5 +39,14 @@ namespace DCIT_318_InventorySystem
             prod.ShowDialog();
             
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+            EditProduct prod = new EditProduct();
+            prod.ukey = row.Cells["itemcode"].Value.ToString();
+            prod.ShowDialog();
+        }
+        
     }
 }

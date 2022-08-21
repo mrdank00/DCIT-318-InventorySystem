@@ -23,5 +23,10 @@ namespace DCIT_318_InventorySystem
                 "VALUES ('"+ txtItemcode.Text + "','" + txtItemname.Text + "','" + txtSize.Text + "','" + txtColor.Text + "','" + cbCat.Text + "','" + txtPrice.Text + "','" + txtQty.Text + "','" + txtReoder.Text + "')");
             
         }
+
+        private void frmAddProd_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
