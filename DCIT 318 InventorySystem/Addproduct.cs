@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace DCIT_318_InventorySystem
 {
-    public partial class frmMain : Form
+    public partial class Addproduct : UserControl
     {
-        public frmMain()
+        public Addproduct()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmManageprod frmManageprod = new frmManageprod();
-            frmManageprod.ShowDialog();
         }
     }
 }

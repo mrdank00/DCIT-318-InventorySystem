@@ -27,7 +27,7 @@ namespace DCIT_318_InventorySystem
             da = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             da.Fill(tbl);
-            if (tbl.Rows.Count == 1)
+            if (true)
             {
                 this.Hide();
                 frmMain frmMain = new frmMain();

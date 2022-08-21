@@ -46,6 +46,7 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "Manage Product";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -107,6 +108,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmmain";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

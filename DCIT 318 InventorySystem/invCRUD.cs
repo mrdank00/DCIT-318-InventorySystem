@@ -46,7 +46,7 @@ namespace DCIT_318_InventorySystem
             da.Fill(tbl);
             dgv.DataSource = tbl;
             conn.Close();
-            System.Windows.Forms.MessageBox.Show("Sucess");
+            //System.Windows.Forms.MessageBox.Show("Sucess");
 
         }
 
