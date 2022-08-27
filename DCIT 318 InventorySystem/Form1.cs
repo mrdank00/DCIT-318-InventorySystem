@@ -27,7 +27,7 @@ namespace DCIT_318_InventorySystem
             da = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             da.Fill(tbl);
-            if (true)
+            if (tbl.Rows.Count<1)
             {
                 this.Hide();
                 frmMain frmMain = new frmMain();
@@ -40,7 +40,7 @@ namespace DCIT_318_InventorySystem
                 MessageBox.Show("Incorrect password");
             }
             con.Close();
-            System.Windows.Forms.MessageBox.Show("Sucess0");
+            //System.Windows.Forms.MessageBox.Show("Sucess0");
 
         }
     }

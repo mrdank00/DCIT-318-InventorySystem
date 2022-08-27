@@ -33,7 +33,7 @@ namespace DCIT_318_InventorySystem
             MySqlCommand cmd = new MySqlCommand(sqlcon,conn);
             cmd.ExecuteNonQuery();
             conn.Close();
-            System.Windows.Forms.MessageBox.Show("Sucess");
+            System.Windows.Forms.MessageBox.Show("Success");
 
         }
         public static void display(string sqlcon,DataGridView dgv)
@@ -48,6 +48,18 @@ namespace DCIT_318_InventorySystem
             conn.Close();
             //System.Windows.Forms.MessageBox.Show("Sucess");
 
+        }
+        public static void combofeed(string sqlcon,ComboBox box)
+        {
+            MySqlConnection conn = invcon();
+            MySqlCommand cmd = new MySqlCommand(sqlcon, conn);
+            MySqlDataReader dr = cmd.ExecuteReader();
+           while (dr.Read())
+            {
+                box.Items.Clear();
+                box.Items.Add(dr.GetString(0));
+            }
+            conn.Close();
         }
 
 

@@ -23,5 +23,19 @@ namespace DCIT_318_InventorySystem
             frmManageprod frmManageprod = new frmManageprod();
             frmManageprod.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSales frmManageprod = new frmSales();
+            frmManageprod.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmManageusers frmManageprod = new frmManageusers();
+            frmManageprod.ShowDialog();
+        }
     }
 }

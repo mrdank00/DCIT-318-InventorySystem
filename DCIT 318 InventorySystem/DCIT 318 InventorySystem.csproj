@@ -120,6 +120,12 @@
     <Compile Include="frmAddProd.Designer.cs">
       <DependentUpon>frmAddProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,18 @@
     </Compile>
     <Compile Include="frmManageprod.Designer.cs">
       <DependentUpon>frmManageprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageusers.Designer.cs">
+      <DependentUpon>frmManageusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </Compile>
     <Compile Include="invCRUD.cs" />
     <Compile Include="Program.cs" />
@@ -157,6 +175,9 @@
     <EmbeddedResource Include="frmAddProd.resx">
       <DependentUpon>frmAddProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditCategory.resx">
       <DependentUpon>frmEditCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +186,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManageprod.resx">
       <DependentUpon>frmManageprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageusers.resx">
+      <DependentUpon>frmManageusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
